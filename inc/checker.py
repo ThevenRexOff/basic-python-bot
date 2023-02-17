@@ -31,6 +31,7 @@ async def checkear(gate, data, update, message_user):
     message = await update.send_message(
         chat_id = message_user.chat.id,
         text = design._0.format(card = card),
+        reply_to_message_id = message_user.id
     )
 
     time_taken = time.time()
